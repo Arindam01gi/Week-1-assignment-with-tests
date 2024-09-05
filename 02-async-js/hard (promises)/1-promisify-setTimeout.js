@@ -3,4 +3,17 @@
 */
 
 function wait(n) {
+
+    const myPromise = new Promise((resolve,reject)=>{
+
+        setTimeout(()=>{
+            resolve("foo")
+            console.log("promise resolved")
+        },n)
+        
+    })
+
+
 }
+
+wait(5000)

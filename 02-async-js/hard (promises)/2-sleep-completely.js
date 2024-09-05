@@ -5,4 +5,12 @@
 
 function sleep (seconds) {
 
+    const promise = new Promise((resolve,reject)=>{
+        setTimeout(()=>(
+            resolve("foo")
+        ),seconds)
+    })
+
 }
+
+sleep(5000)
